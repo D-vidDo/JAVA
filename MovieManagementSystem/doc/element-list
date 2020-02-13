@@ -1,0 +1,4 @@
+module:MovieManagementSystem
+sait.mms.application
+sait.mms.managers
+sait.mms.problemdomain
