@@ -36,11 +36,10 @@ public class Manager {
 	private boolean choiceHandler(int choice, Scanner user) {
 		switch (choice) {
 		case 1:
-			System.out.print("Enter ISBN of book: ");
-
+			System.out.print("PLACEHOLDER FOR CHRIS");
 			return false;
 		case 2:
-			System.out.print("Enter title to search for: ");
+			System.out.print("PLACEHOLDER FOR CHRIS");
 			return false;
 		case 3:
 			displayType();
@@ -48,7 +47,6 @@ public class Manager {
 		case 4:
 			randomBook();
 			return false;
-
 		case 5:
 			return true;
 		default:
