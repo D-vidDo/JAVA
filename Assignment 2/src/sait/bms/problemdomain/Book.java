@@ -5,25 +5,23 @@ package sait.bms.problemdomain;
  *
  */
 public class Book {
-	private long isbn;
+	private String isbn;
 	private String callNum;
 	private int available;
 	private int total;
 	private String title;
 	private String authors;
-	
-	public Book()
-	{
-		this.isbn = 0;
+
+	public Book() {
+		this.isbn = "";
 		this.callNum = "";
 		this.available = 0;
 		this.total = 0;
 		this.title = "";
 		this.authors = "";
 	}
-	
-	public Book(long isbn, String call, int avail, int tot, String tit, String auth) 
-	{
+
+	public Book(String isbn, String call, int avail, int tot, String tit, String auth) {
 		this.isbn = isbn;
 		this.callNum = call;
 		this.available = avail;
@@ -32,7 +30,7 @@ public class Book {
 		this.authors = auth;
 	}
 
-	public long getIsbn() {
+	public String getIsbn() {
 		return isbn;
 	}
 
@@ -56,14 +54,33 @@ public class Book {
 		return authors;
 	}
 
-	public String toString()
-	{
-		String str = String.format("%s20%d\n","ISBN:",this.isbn);
-		str += String.format("%s20%s","Call Number\n",this.callNum);
-		str += String.format("%s20%d","Available\n",this.available);
-		str += String.format("%s20%d","Total:\n",this.total);
-		str += String.format("%s20%s","Call Number\n",this.title);
+	public String toString() {
+		String str = String.format("%-25s%s\n", "ISBN:", getIsbn()); 
+		str += String.format("%-25s%s\n", "Call Number:", getCallNum());
+		str += String.format("%-25s%d\n", "Available", getAvailable());
+		str += String.format("%-25s%d\n", "Total:", getTotal());
+		str += String.format("%-25s%s\n", "Title:", getTitle());
 		return str;
 	}
-	
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

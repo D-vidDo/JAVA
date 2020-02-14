@@ -8,14 +8,14 @@ public class Cookbook extends Book {
 	final String N = "None";
 	private String diet;
 
-	public Cookbook(long isbn, String call, int avail, int tot, String tit, String auth, String diet) {
+	public Cookbook(String isbn, String call, int avail, int tot, String tit, String auth, String diet) {
 		super(isbn, call, avail, tot, tit, auth);
 		this.diet = diet;
 	}
 
 	public String toString() {
-		String str = "";// enter the super function str here
-		str += String.format("%20s", "Diet:");
+		String str = super.toString();
+		str += String.format("%-25s", "Diet:");
 		if (this.diet.equalsIgnoreCase("d"))
 			str += String.format("%s\n", this.D);
 		else if (this.diet.equalsIgnoreCase("V"))
