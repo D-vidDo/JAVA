@@ -20,7 +20,6 @@ public class FlightsTab extends TabBase
 	 */
 	private Manager manager;
 	
-	private ArrayList<String> airports;
 	
 	/**
 	 * List of flights.
@@ -43,8 +42,7 @@ public class FlightsTab extends TabBase
 	{
 		this.manager = manager;
 		panel.setLayout(new BorderLayout());
-		
-		this.airports = manager.getAirports();
+	
 		
 		JPanel northPanel = createNorthPanel();
 		panel.add(northPanel, BorderLayout.NORTH);
@@ -256,6 +254,7 @@ public class FlightsTab extends TabBase
 		finderPanel.add(lblFrom, gbc_lblFrom);
 		
 		JComboBox comboBox = new JComboBox();
+		comboBox.add(comboBox, "HELLO");
 		GridBagConstraints gbc_comboBox = new GridBagConstraints();
 		gbc_comboBox.insets = new Insets(0, 0, 5, 0);
 		gbc_comboBox.fill = GridBagConstraints.HORIZONTAL;

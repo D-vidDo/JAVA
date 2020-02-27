@@ -4,6 +4,5 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="lib"/>
 	<classpathentry kind="lib" path="lib/CPRG251A3Backend.jar"/>
-	<classpathentry kind="lib" path="C:/Users/David/Documents/GitHub/JAVA/CPRG251A3Skeleton/lib/CPRG251A3Backend.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
